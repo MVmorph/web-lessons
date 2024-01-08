@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800;900&display=swap");
+@import "icons.css";
+:root {
+  /*
+  palette:
+  **/
+  --main-color: #025464;
+  --secondary-color: #e57c23;
+  --tertiary-color: #e8aa42;
+  --quaternary-color: #f8f1f1;
+
+  --animation-time: 150ms;
+  --main-font: "Nunito", sans-serif;
+  --screen-limit: 1600px;
+
+  background-color: var(--main-color);
+  color: var(--quaternary-color);
+  font-family: var(--main-font);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/*
+utility
+**/
+.bordered-r {
+  border: 1px solid rgb(255, 0, 0);
+}
+.bordered-g {
+  border: 1px solid rgb(0, 255, 8);
+}
+.bordered-b {
+  border: 1px solid rgb(4, 0, 255);
+}
+.title {
+  text-align: center;
+  margin: 0;
+}
+.row-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+/*
+components
+**/
+.root-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid var(--quaternary-color);
+}
+.content-container {
+  max-width: var(--screen-limit);
+  margin: 0 auto;
+}
+.header-container {
+  margin: 0 auto;
+  padding: 1rem;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo__text {
+  font-size: 3rem;
+  font-weight: bold;
+}
+/* ------ */
+/*
+animations:
+**/
+
+
